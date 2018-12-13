@@ -29,6 +29,7 @@ body {
 .cards-grid {
   display: grid;
   margin: 4rem;
+  margin-bottom: 0;
   padding: 4rem 10rem;
   place-items: center;
   align-items: center;
@@ -44,6 +45,7 @@ body {
 .cards-grid-landscape {
   display: grid;
   margin: 4rem;
+  margin-top: 0;
   padding: 4rem 10rem;
   place-items: center;
   align-items: center;
@@ -53,7 +55,7 @@ body {
   /* grid-template-columns: repeat(auto-fill, minmax(280px, auto)); */
   grid-template-columns: repeat(auto-fill, minmax(500px, 680px));
   /* grid-auto-rows: 500px 450px; */
-  grid-auto-rows: 450px;
+  /* grid-template-rows: 450px; */
   grid-gap: 8rem;
 }
 
