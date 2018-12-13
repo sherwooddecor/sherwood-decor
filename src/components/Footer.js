@@ -55,8 +55,8 @@ const Footer = () => (
             <h3 className="">
               <span className="">Email</span>
             </h3>
-            <a href="mailto:jackaldevelopment@gmail.com">
-              jackaldevelopment@gmail.com
+            <a href="mailto:sherwoodweddecor@gmail.com">
+              sherwoodweddecor@gmail.com
             </a>
           </li>
         </ul>
