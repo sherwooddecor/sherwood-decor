@@ -1,0 +1,232 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main-grid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 10rem;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-rows: minmax(80vh, auto) minmax(70vh, auto) minmax(7vh, auto);
+}
+
+.cards-grid {
+  display: grid;
+  margin: 4rem;
+  padding: 4rem 10rem;
+  place-items: center;
+  place-self: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(25rem, auto)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(280px, auto)); */
+  grid-template-columns: repeat(auto-fill, minmax(380px, auto));
+  grid-auto-rows: 750px;
+  grid-gap: 8rem;
+}
+
+.cards-grid-landscape {
+  display: grid;
+  margin: 4rem;
+  padding: 4rem 10rem;
+  place-items: center;
+  place-self: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(25rem, auto)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(280px, auto)); */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 680px));
+  /* grid-auto-rows: 500px 450px; */
+  grid-auto-rows: 450px;
+  grid-gap: 8rem;
+}
+
+.container {
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.header {
+  padding: 30px;
+  display: grid;
+  grid-auto-flow: row;
+  width: 100%;
+  place-items: center;
+  grid-column: 1/-1;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url('../images/banner-background.jpg');
+  /* background: url('../images/banner-background.jpg') center #333 no-repeat; */
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 5px 15px #000;
+}
+
+.header p {
+  margin: 0;
+  padding: 2rem;
+}
+
+.header .button {
+  color: #fff !important;
+  /* text-transform: uppercase; */
+  background: transparent;
+  font-weight: bold;
+  padding: 20px;
+  border: 4px solid #fff !important;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 0px 0px 5px #000;
+  margin-top: 9rem;
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header .button:hover {
+  color: #ffffff !important;
+  text-shadow: none;
+  background: #d1c09c;
+  border-color: #d1c09c !important;
+  transition: all 0.4s ease;
+}
+
+.leading-bigtext {
+  grid-template-columns: 1/1;
+  margin-right: 60px;
+  font-weight: bold;
+  font-size: 5.9rem;
+}
+
+.leading-text {
+  grid-column: 2/2;
+  font-size: 1.8em;
+  display: block;
+  line-height: 1.4em;
+  /* color: #000; */
+  font-weight: 600;
+  text-align: center;
+  /* webkit-text-stroke-width: 20px;
+  -webkit-text-stroke-color: black; */
+}
+
+.picture {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  /* object-fit: ; */
+}
+
+.card {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 7fr auto;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+.footer-grid {
+  grid-column: 1/-1;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  margin-top: 2.5rem;
+  display: grid;
+  grid-gap: 4rem;
+  justify-self: center;
+  width: 100%;
+  align-self: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  padding: 2rem;
+}
+
+.contact-form {
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.form-input input {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.8rem;
+}
+
+.form-input textarea {
+  font-size: 2rem;
+}
+
+.actions input {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  /* height: 2rem; */
+}
+
+textarea {
+  width: 100%;
+}
+
+.address {
+  width: 100%;
+  padding: 0;
+  grid-column: 2/-1;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 2.4rem;
+  }
+  .leading-text {
+    /* align-items: center; */
+    grid-auto-flow: rows;
+    font-size: 2.25rem;
+  }
+  .leading-bigtext {
+    font-size: 5rem;
+  }
+  .cards-grid {
+    /* grid-template-columns: auto; */
+    padding: 2.5rem;
+  }
+  .cards-grid-landscape {
+    grid-template-columns: repeat(auto-fill, minmax(380px, auto)) !important;
+    /* grid-auto-rows: 750px; */
+    padding: 2.5rem;
+  }
+}
