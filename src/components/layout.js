@@ -27,12 +27,12 @@ const Layout = ({ children }) => (
             {
               name: 'description',
               content:
-                "Find furniture rentals for your wedding at Jackal's Wedding Decor",
+                'Find furniture rentals in North East Ohio for your wedding at Sherwood Wedding Decor',
             },
             {
               name: 'keywords',
               content:
-                'Wedding, rentals, wedding decor, lakewood wedding rentals, jackals wedding decor, wedding furniture, wedding decoration',
+                'Wedding, rentals, wedding decor, lakewood wedding rentals, ohio wedding rentals, north east ohio wedding rentals, cleveland wedding rentals, sherwood wedding decor, wedding furniture, wedding decoration',
             },
           ]}
         >

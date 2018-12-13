@@ -31,6 +31,8 @@ body {
   margin: 4rem;
   padding: 4rem 10rem;
   place-items: center;
+  align-items: center;
+  justify-items: center;
   place-self: center;
   /* grid-template-columns: repeat(auto-fill, minmax(25rem, auto)); */
   /* grid-template-columns: repeat(auto-fill, minmax(280px, auto)); */
@@ -44,6 +46,8 @@ body {
   margin: 4rem;
   padding: 4rem 10rem;
   place-items: center;
+  align-items: center;
+  justify-items: center;
   place-self: center;
   /* grid-template-columns: repeat(auto-fill, minmax(25rem, auto)); */
   /* grid-template-columns: repeat(auto-fill, minmax(280px, auto)); */
@@ -75,6 +79,8 @@ h3 {
   grid-auto-flow: row;
   width: 100%;
   place-items: center;
+  align-items: center;
+  justify-items: center;
   grid-column: 1/-1;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
@@ -173,6 +179,8 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   place-items: center;
+  align-items: center;
+  justify-items: center;
   padding: 2rem;
 }
 
